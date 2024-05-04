@@ -151,3 +151,17 @@ article {
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
+
+section {
+  background: var(--eerie-black-2);
+  /* border: 1px solid var(--jet); */
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: var(--jet);
+  margin: 16px 0;
+}
