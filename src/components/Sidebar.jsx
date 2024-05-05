@@ -72,6 +72,24 @@ const Sidebar = () => (
             </a>
           </div>
         </li>
+
+        {/* 3. location contact */}
+        <li className='contact-item'>
+          {/* icon */}
+          <div className='icon-box'>
+            <GiAfrica />
+          </div>
+          {/* area */}
+          <div className='contact-info'>
+            <p className='contact-title'>Location</p>
+            <a
+              href='https://en.wikipedia.org/wiki/Nairobi'
+              className='contact-link'
+            >
+              Nairobi, Kenya
+            </a>
+          </div>
+        </li>
       </ul>
     </div>
   </aside>
