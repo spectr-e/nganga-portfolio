@@ -1180,7 +1180,7 @@ textarea.form-input::-webkit-resizer {
   }
 }
 
-/* > 500px  */
+/* > 580px  */
 @media (min-width: 580px) {
   :root {
     /* typography */

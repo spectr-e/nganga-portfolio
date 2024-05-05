@@ -3,7 +3,7 @@ const Sidebar = () => (
   <aside className='sidebar'>
     <div>
       <figure>
-        <img src={josiah} alt='josiah' width={80} />
+        <img src={josiah} alt='josiah' width={120} />
       </figure>
     </div>
   </aside>
