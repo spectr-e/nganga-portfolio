@@ -1161,3 +1161,19 @@ textarea.form-input::-webkit-resizer {
 .form-btn:disabled:hover::before {
   background: var(--bg-gradient-jet);
 }
+
+/* MOBILE RESPONSIVENESS */
+
+/* > 450px */
+@media (min-width: 450px) {
+  /* client section */
+  .clients-item {
+    min-width: calc(33.33% - 10px);
+  }
+
+  /* portfolio + blog section */
+  .project-img,
+  .blog-banner-box {
+    height: auto;
+  }
+}
