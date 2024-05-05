@@ -1486,4 +1486,19 @@ textarea.form-input::-webkit-resizer {
     grid-template-columns: 1fr 1fr;
     gap: 30px 15px;
   }
+
+  /* navbar */
+  .navbar-link {
+    --fs-8: 15px;
+  }
+
+  /* testimonials modal */
+  .testimonials-modal {
+    gap: 35px;
+    max-width: 680px;
+  }
+
+  .modal-avatar-box img {
+    width: 80px;
+  }
 }
