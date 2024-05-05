@@ -1598,4 +1598,15 @@ textarea.form-input::-webkit-resizer {
   .navbar-link {
     font-weight: var(--fw-500);
   }
+
+  /* service */
+  .service-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 25px;
+  }
+
+  /* testimonials */
+  .testimonials-item {
+    min-width: calc(50% - 15px);
+  }
 }
