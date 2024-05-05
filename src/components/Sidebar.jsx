@@ -1,6 +1,6 @@
 import { josiah } from '../assets'
 const Sidebar = () => (
-  <aside>
+  <aside className='sidebar'>
     <div>
       <figure>
         <img src={josiah} alt='josiah' width={80} />

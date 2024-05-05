@@ -3,7 +3,7 @@ import './App.css'
 import { Sidebar } from './components'
 
 const App = () => (
-  <div>
+  <>
     <Sidebar />
     <div className='main-content'>
       <nav>Navbar</nav>
@@ -15,7 +15,7 @@ const App = () => (
         <Outlet />
       </section>
     </div>
-  </div>
+  </>
 )
 
 export default App
