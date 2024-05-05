@@ -1163,8 +1163,8 @@ textarea.form-input::-webkit-resizer {
 }
 
 /* MOBILE RESPONSIVENESS */
-
 /* > 450px */
+
 @media (min-width: 450px) {
   /* client section */
   .clients-item {
@@ -1175,5 +1175,44 @@ textarea.form-input::-webkit-resizer {
   .project-img,
   .blog-banner-box {
     height: auto;
+  }
+}
+
+/* > 500px  */
+@media (min-width: 580px) {
+  :root {
+    /* typography */
+    --fs-1: 32px;
+    --fs-2: 24px;
+    --fs-3: 26px;
+    --fs-4: 18px;
+    --fs-6: 15px;
+    --fs-7: 15px;
+    --fs-8: 12px;
+  }
+
+  /* reusable components */
+  .sidebar,
+  article {
+    width: 520px;
+    margin-inline: auto;
+    padding: 30px;
+  }
+
+  .article-title {
+    font-weight: var(--fw-600);
+    padding-bottom: 15px;
+  }
+
+  .article-title::after {
+    width: 40px;
+    height: 5px;
+  }
+
+  .icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    font-size: 18px;
   }
 }
