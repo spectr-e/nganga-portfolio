@@ -42,6 +42,21 @@ const Sidebar = () => (
             </a>
           </div>
         </li>
+
+        {/* 1. email contact */}
+        <li className='contact-item'>
+          {/* icon */}
+          <div className='icon-box'>
+            <GiMailbox />
+          </div>
+          {/* address */}
+          <div className='contact-info'>
+            <p className='contact-title'>Email</p>
+            <a href='mailto:business.josia@gmail.com' className='contact-link'>
+              business.josia@gmail.com
+            </a>
+          </div>
+        </li>
       </ul>
     </div>
   </aside>
