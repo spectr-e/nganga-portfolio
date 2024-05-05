@@ -1,12 +1,12 @@
 import { Outlet } from 'react-router-dom'
 import './App.css'
-import { Sidebar } from './components'
+import { NavBar, Sidebar } from './components'
 
 const App = () => (
   <>
     <Sidebar />
     <div className='main-content'>
-      <nav>Navbar</nav>
+      <NavBar />
       <section
         style={{
           scrollBehavior: 'smooth',

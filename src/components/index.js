@@ -1,2 +1,3 @@
 import Sidebar from './Sidebar'
-export { Sidebar }
+import NavBar from './NavBar'
+export { Sidebar, NavBar }
