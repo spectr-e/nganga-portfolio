@@ -1738,4 +1738,9 @@ textarea.form-input::-webkit-resizer {
   .social-list {
     justify-content: center;
   }
+
+  /* resume */
+  .timeline-text {
+    max-width: 700px;
+  }
 }
