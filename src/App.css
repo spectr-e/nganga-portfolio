@@ -1468,3 +1468,22 @@ textarea.form-input::-webkit-resizer {
     font-size: 18px;
   }
 }
+
+/* > 768px */
+@media (min-width: 768px) {
+  /* reusable components */
+  .sidebar,
+  article {
+    width: 700px;
+  }
+
+  .has-scrollbar::-webkit-scrollbar-button {
+    width: 100px;
+  }
+
+  /* sidebar */
+  .contacts-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 15px;
+  }
+}
