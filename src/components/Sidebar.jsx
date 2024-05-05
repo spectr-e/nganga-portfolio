@@ -1,4 +1,4 @@
-import { GiClawSlashes } from 'react-icons/gi'
+import { GiClawSlashes, GiMailbox } from 'react-icons/gi'
 import { josiah } from '../assets'
 const Sidebar = () => (
   <aside className='sidebar'>
@@ -17,6 +17,28 @@ const Sidebar = () => (
         <span>Show Contacts</span>
         <GiClawSlashes />
       </button>
+      {/* contact info */}
+      <div className='sidebar-info_more'>
+        <hr className='separator2' />
+        <ul className='contacts-list'>
+          <li className='contact-item'>
+            {/* email icon */}
+            <div className='icon-box'>
+              <GiMailbox />
+            </div>
+            {/* email contact */}
+            <div className='contact-info'>
+              <p className='contact-title'>Email</p>
+              <a
+                href='mailto:business.josia@gmail.com'
+                className='contact-link'
+              >
+                business.josia@gmail.com
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </aside>
 )

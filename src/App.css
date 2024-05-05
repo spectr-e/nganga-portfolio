@@ -172,6 +172,10 @@ section {
   margin: 16px 0;
 }
 
+.separator2 {
+  margin: 16px 4px;
+}
+
 .icon-box {
   position: relative;
   background: var(--border-gradient-onyx);
