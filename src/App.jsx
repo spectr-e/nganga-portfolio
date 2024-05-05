@@ -1,9 +1,10 @@
 import { Outlet } from 'react-router-dom'
 import './App.css'
+import { Sidebar } from './components'
 
 const App = () => (
   <div>
-    <p>Sidebar</p>
+    <Sidebar />
     <div className='main-content'>
       <nav>Navbar</nav>
       <section
