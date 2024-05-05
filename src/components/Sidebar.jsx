@@ -1,7 +1,9 @@
-import { GiClawSlashes, GiMailbox } from 'react-icons/gi'
+import { GiAfrica, GiClawSlashes, GiMailbox, GiPhone } from 'react-icons/gi'
 import { josiah } from '../assets'
+import { FaLinkedin } from 'react-icons/fa'
 const Sidebar = () => (
   <aside className='sidebar'>
+    {/* introduction details */}
     <div className='sidebar-info'>
       {/* josiah */}
       <figure className='avatar-box'>
@@ -17,28 +19,30 @@ const Sidebar = () => (
         <span>Show Contacts</span>
         <GiClawSlashes />
       </button>
-      {/* contact info */}
-      <div className='sidebar-info_more'>
-        <hr className='separator2' />
-        <ul className='contacts-list'>
-          <li className='contact-item'>
-            {/* email icon */}
-            <div className='icon-box'>
-              <GiMailbox />
-            </div>
-            {/* email contact */}
-            <div className='contact-info'>
-              <p className='contact-title'>Email</p>
-              <a
-                href='mailto:business.josia@gmail.com'
-                className='contact-link'
-              >
-                business.josia@gmail.com
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
+    </div>
+
+    {/* contact details */}
+    <div className='sidebar-info_more'>
+      <hr className='separator2' />
+      <ul className='contacts-list'>
+        {/* 0. linkedin contact */}
+        <li className='contact-item'>
+          {/* linkedin icon */}
+          <div className='icon-box'>
+            <FaLinkedin />
+          </div>
+          {/* linkedin address */}
+          <div className='contact-info'>
+            <p className='contact-title'>Linkedin</p>
+            <a
+              href='https://www.linkedin.com/in/kamaujosia'
+              className='contact-link'
+            >
+              in | kamaujosia
+            </a>
+          </div>
+        </li>
+      </ul>
     </div>
   </aside>
 )

@@ -173,7 +173,8 @@ section {
 }
 
 .separator2 {
-  margin: 16px 4px;
+  margin: 24px 4px;
+  opacity: 25%;
 }
 
 .icon-box {
