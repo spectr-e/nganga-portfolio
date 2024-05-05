@@ -57,6 +57,21 @@ const Sidebar = () => (
             </a>
           </div>
         </li>
+
+        {/* 2. phone contact */}
+        <li className='contact-item'>
+          {/* icon */}
+          <div className='icon-box'>
+            <GiPhone />
+          </div>
+          {/* number */}
+          <div className='contact-info'>
+            <p className='contact-title'>Phone</p>
+            <a href='tel:+254736972910' className='contact-link'>
+              +254 (736) 972-910
+            </a>
+          </div>
+        </li>
       </ul>
     </div>
   </aside>
