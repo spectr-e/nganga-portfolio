@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import ServiceCard from './ServiceCard'
 
 const About = () => {
   const [services, setServices] = useState([])
@@ -33,8 +34,8 @@ const About = () => {
       <section className='service'>
         <h2 className='h3 service-title'>What I Do</h2>
         <ul className=''>
-          {services.map((services, index) => (
-            // <Service data={service} key={index}/>
+          {services.map((service, index) => (
+            <ServiceCard data={service} key={index} />
           ))}
         </ul>
       </section>
