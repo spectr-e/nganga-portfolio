@@ -2,7 +2,7 @@
 
 :root {
   /* COLORS */
-
+  color: white;
   /* gradient */
   --bg-gradient-onyx: linear-gradient(
     to bottom right,
