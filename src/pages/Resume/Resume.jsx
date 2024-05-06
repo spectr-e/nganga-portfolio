@@ -1,4 +1,5 @@
 import { FaBookReader } from 'react-icons/fa'
+import Timeline from './Timeline'
 
 const Resume = () => {
   return (
@@ -17,7 +18,9 @@ const Resume = () => {
           <h3 className='h3'>Education</h3>
         </div>
 
-        <ol className='timeline-list'></ol>
+        <ol className='timeline-list'>
+          <Timeline />
+        </ol>
       </div>
     </section>
   )
