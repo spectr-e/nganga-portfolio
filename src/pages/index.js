@@ -1,2 +1,3 @@
 import About from './About/About'
-export { About }
+import Resume from './Resume/Resume'
+export { About, Resume }
