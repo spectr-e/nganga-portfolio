@@ -1,3 +1,5 @@
+import { FaBookReader } from 'react-icons/fa'
+
 const Resume = () => {
   return (
     <section className=''>
@@ -5,9 +7,17 @@ const Resume = () => {
         <h2 className='h2 article-title'>My Resume</h2>
       </header>
       <div className='timeline'>
+        {/* title */}
         <div className='title-wrapper'>
-          <div className='icon-box'></div>
+          {/* icon */}
+          <div className='icon-box'>
+            <FaBookReader />
+          </div>
+          {/* text */}
+          <h3 className='h3'>Education</h3>
         </div>
+
+        <ol className='timeline-list'></ol>
       </div>
     </section>
   )
