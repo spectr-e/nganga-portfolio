@@ -33,7 +33,7 @@ const About = () => {
       {/* my services */}
       <section className='service'>
         <h2 className='h3 service-title'>What I Do</h2>
-        <ul className=''>
+        <ul className='service-list'>
           {services.map((service, index) => (
             <ServiceCard data={service} key={index} />
           ))}
