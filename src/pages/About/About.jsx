@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import ServiceCard from './ServiceCard'
+import TestimonialCard from './TestimonialCard'
 
 const About = () => {
   const [services, setServices] = useState([])
@@ -50,7 +51,11 @@ const About = () => {
       {/* other people's testimonies */}
       <section className='testimonials'>
         <h3 className='h3 testimonials-title'>Testimonials</h3>
-        <ul className='testimonials-list has-scrollbar'></ul>
+        <ul className='testimonials-list has-scrollbar'>
+          {testimonials.map((testimonial, index) => (
+            <TestimonialCard key={index} data={testimonial} />
+          ))}
+        </ul>
       </section>
     </div>
   )
