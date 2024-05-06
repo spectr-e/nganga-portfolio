@@ -19,7 +19,13 @@ const Resume = () => {
         </div>
 
         <ol className='timeline-list'>
-          <Timeline />
+          <Timeline
+            title='University of Nairobi'
+            date={'2020 - 2024'}
+            description={
+              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quasi esse, nulla mollitia quod expedita eveniet adipisci labore fugit? Excepturi atque quasi dicta. Sed fugit, saepe ipsa quo eligendi corporis?'
+            }
+          />
         </ol>
       </div>
     </section>
