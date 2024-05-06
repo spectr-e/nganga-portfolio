@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import ServiceCard from './ServiceCard'
 import TestimonialCard from './TestimonialCard'
+import { logo1, logo2, logo3, logo4, logo5, logo6 } from '../../assets'
 
 const About = () => {
   const [services, setServices] = useState([])
@@ -55,6 +56,49 @@ const About = () => {
           {testimonials.map((testimonial, index) => (
             <TestimonialCard key={index} data={testimonial} />
           ))}
+        </ul>
+      </section>
+
+      {/* clients i have worked with */}
+      <section className='clients'>
+        <h3 className='h3 testimonials-title'>Clients</h3>
+        <ul className='clients-list has-scrollbar'>
+          {/* 1 */}
+          <li className='clients-item'>
+            <a href='#'>
+              <img src={logo1} alt='company 1' />
+            </a>
+          </li>
+          {/* 2 */}
+          <li className='clients-item'>
+            <a href='#'>
+              <img src={logo2} alt='company 2' />
+            </a>
+          </li>
+          {/* 3 */}
+          <li className='clients-item'>
+            <a href='#'>
+              <img src={logo3} alt='company 3' />
+            </a>
+          </li>
+          {/* 4 */}
+          <li className='clients-item'>
+            <a href='#'>
+              <img src={logo4} alt='company 4' />
+            </a>
+          </li>
+          {/* 5 */}
+          <li className='clients-item'>
+            <a href='#'>
+              <img src={logo5} alt='company 5' />
+            </a>
+          </li>
+          {/* 6 */}
+          <li className='clients-item'>
+            <a href='#'>
+              <img src={logo6} alt='company 6' />
+            </a>
+          </li>
         </ul>
       </section>
     </div>
