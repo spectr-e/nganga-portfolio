@@ -24,12 +24,12 @@ const About = () => {
         <h2 className='h2 article-title'>About Me</h2>
       </header>
       <section className='about-text'>
-        <p className=''>
+        <p>
           I am a Creative Full Stack Software Engineer from Nairobi, Kenya
           working in web development and graphic design. I enjoy turning complex
           problems into simple, beautiful and intuitive digital systems.
         </p>
-        <p className=''>
+        <p>
           My job is to build your website so that it is functional and
           user-friendly but at the same time attractive. Moreover, I add a
           personal touch to your product and make sure that it is eye-catching
