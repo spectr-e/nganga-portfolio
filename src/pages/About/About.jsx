@@ -28,6 +28,16 @@ const About = () => {
           in the most creative way
         </p>
       </section>
+
+      {/* my services */}
+      <section className='service'>
+        <h2 className='h3 service-title'>What I Do</h2>
+        <ul className=''>
+          {services.map((services, index) => (
+            // <Service data={service} key={index}/>
+          ))}
+        </ul>
+      </section>
     </div>
   )
 }
