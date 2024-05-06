@@ -3,10 +3,17 @@ import ServiceCard from './ServiceCard'
 
 const About = () => {
   const [services, setServices] = useState([])
+  const [testimonials, setTestimonials] = useState([])
+
   useEffect(() => {
+    // services data
     fetch('/services.json')
       .then((response) => response.json())
       .then((data) => setServices(data))
+    // testimonials data
+    fetch('/testimonials.json')
+      .then((response) => response.json())
+      .then((data) => setTestimonials(data))
   }, [])
 
   return (
