@@ -39,6 +39,12 @@ const About = () => {
           ))}
         </ul>
       </section>
+
+      {/* other people's testimonies */}
+      <section className='testimonials'>
+        <h3 className='h3 testimonials-title'>Testimonials</h3>
+        <ul className='testimonials-list has-scrollbar'></ul>
+      </section>
     </div>
   )
 }
