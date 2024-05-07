@@ -37,6 +37,7 @@ const Sidebar = () => (
             <a
               href='https://www.linkedin.com/in/kamaujosia'
               className='contact-link'
+              target='_blank'
             >
               in | kamaujosia
             </a>
@@ -52,7 +53,11 @@ const Sidebar = () => (
           {/* address */}
           <div className='contact-info'>
             <p className='contact-title'>Email</p>
-            <a href='mailto:business.josia@gmail.com' className='contact-link'>
+            <a
+              href='mailto:business.josia@gmail.com'
+              target='_blank'
+              className='contact-link'
+            >
               business.josia@gmail.com
             </a>
           </div>
@@ -67,7 +72,11 @@ const Sidebar = () => (
           {/* number */}
           <div className='contact-info'>
             <p className='contact-title'>Phone</p>
-            <a href='tel:+254736972910' className='contact-link'>
+            <a
+              href='tel:+254736972910'
+              target='_blank'
+              className='contact-link'
+            >
               +254 (736) 972-910
             </a>
           </div>
@@ -83,6 +92,7 @@ const Sidebar = () => (
           <div className='contact-info'>
             <p className='contact-title'>Location</p>
             <a
+              target='_blank'
               href='https://en.wikipedia.org/wiki/Nairobi'
               className='contact-link'
             >
