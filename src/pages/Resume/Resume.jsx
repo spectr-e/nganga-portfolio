@@ -76,6 +76,14 @@ const Resume = () => {
           />
         </ol>
       </div>
+
+      {/* Skills Section */}
+      <div className='skill'>
+        <h3 className='skills-title h3'>My Skills</h3>
+        <ul className='skills-list content-card'>
+          <li className=''></li>
+        </ul>
+      </div>
     </section>
   )
 }
