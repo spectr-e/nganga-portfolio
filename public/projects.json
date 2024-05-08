@@ -2,19 +2,19 @@
   {
     "id": 1,
     "title": "Finance",
-    "category": "Web development",
+    "category": "Web Development",
     "image": "/src/assets/project-1.jpg"
   },
   {
     "id": 2,
     "title": "Orizon",
-    "category": "Web development",
+    "category": "Web Development",
     "image": "/src/assets/project-2.png"
   },
   {
     "id": 3,
     "title": "Fundo",
-    "category": "Web design",
+    "category": "Web Design",
     "image": "/src/assets/project-3.jpg"
   },
   {
@@ -26,19 +26,19 @@
   {
     "id": 5,
     "title": "DSM.",
-    "category": "Web design",
+    "category": "Web Design",
     "image": "/src/assets/project-5.png"
   },
   {
     "id": 6,
     "title": "MetaSpark",
-    "category": "Web design",
+    "category": "Web Design",
     "image": "/src/assets/project-6.png"
   },
   {
     "id": 7,
     "title": "Summary",
-    "category": "Web development",
+    "category": "Web Development",
     "image": "/src/assets/project-7.png"
   },
   {
@@ -50,7 +50,7 @@
   {
     "id": 9,
     "title": "Arrival",
-    "category": "Web development",
+    "category": "Web Development",
     "image": "/src/assets/project-9.png"
   }
 ]

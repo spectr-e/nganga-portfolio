@@ -17,7 +17,17 @@ const Projects = () => {
 
   const [activeCat, setActiveCat] = useState('All')
 
-  const handleFilter = (category) => {}
+  const handleFilter = (category) => {
+    setActiveCat(category)
+    if (category === 'All') {
+      setFiltered(projects)
+    } else {
+      const filtered = projects.filter(
+        (project) => project.category === category
+      )
+      setFiltered(filtered)
+    }
+  }
 
   return (
     <section className=''>
@@ -32,6 +42,7 @@ const Projects = () => {
             <li className='filter-item' key={index}>
               <button
                 onClick={() => handleFilter(category)}
+                data-filter-btn
                 className={category === activeCat ? 'active' : null}
               >
                 {category}
