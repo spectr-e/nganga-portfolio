@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { FaRegEye } from 'react-icons/fa'
+import Project from './Project'
 
 const Projects = () => {
   // import projects data
@@ -56,30 +56,7 @@ const Projects = () => {
       <section className='projects'>
         <ul className='project-list'>
           {filtered.map((project) => (
-            <li
-              className='project-item active'
-              key={project.id}
-              data-category={project.category}
-              data-filter-item
-            >
-              <a href='#'>
-                {/* project snapshots */}
-                <figure className='project-img'>
-                  <div className='project-item-icon-box'>
-                    <FaRegEye />
-                  </div>
-                  <img
-                    src={project.image}
-                    alt='project snapshot'
-                    loading='lazy'
-                  />
-                </figure>
-
-                {/* project details */}
-                <h3 className='project-title'>{project.title}</h3>
-                <p className='project-category'>{project.category}</p>
-              </a>
-            </li>
+            <Project project={project} key={project.id} />
           ))}
         </ul>
       </section>
