@@ -4,7 +4,7 @@ const Skill = ({ title, value }) => {
       {/* title */}
       <div className='title-wrapper'>
         <h5 className='h5'>{title}</h5>
-        <data value={value}>{value}</data>
+        <data value={value}>{value}%</data>
       </div>
 
       {/* level */}
