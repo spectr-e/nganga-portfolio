@@ -34,6 +34,21 @@ const Projects = () => {
           )
         )}
       </ul>
+
+      {/* projects */}
+      <section className='projects'>
+        <ul className=''>
+          {filtered.map((project) => (
+            <li className='' key={project.id}>
+              <a href='#' className=''>
+                <figure className=''>
+                  <img src={project.img} alt='project snapshot' width='80' />
+                </figure>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
     </section>
   )
 }
