@@ -45,6 +45,26 @@ const Blogs = () => {
               Previous
             </button>
           </li>
+
+          {/* show pages */}
+          {Array.from(
+            { length: Math.ceil(blogs.length / postsPerPage) },
+            (_, index) => (
+              <li
+                key={index}
+                className={`page-item ${
+                  currentPage === index + 1 ? 'active' : null
+                }`}
+              >
+                <button
+                  onClick={() => paginate(index + 1)}
+                  className='page-link'
+                >
+                  {index + 1}
+                </button>
+              </li>
+            )
+          )}
         </ul>
       </nav>
     </section>
