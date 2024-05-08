@@ -1,4 +1,14 @@
+import { useEffect, useState } from 'react'
+
 const Projects = () => {
+  // import projects data
+  const [projects, setProjects] = useState([])
+  useEffect(() => {
+    fetch('/projects.json')
+      .then((response) => response.json())
+      .then((data) => setProjects(data))
+  }, [])
+
   return (
     <section className=''>
       <header className=''>
@@ -6,6 +16,7 @@ const Projects = () => {
       </header>
 
       {/* Filter Buttons */}
+      <ul className=''></ul>
     </section>
   )
 }
