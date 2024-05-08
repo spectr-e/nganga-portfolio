@@ -15,6 +15,8 @@ const Blog = ({ post }) => {
             <span className='dot'></span>
             <time datetime={date}>{date}</time>
           </div>
+          <h3 className='h3 blog-item-title'>{title}</h3>
+          <p className='blog-text'>{description}</p>
         </div>
       </a>
     </li>
