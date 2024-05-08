@@ -9,6 +9,7 @@ const Projects = () => {
       .then((data) => setProjects(data))
   }, [])
 
+  const [activeCat, setActiveCat] = useState('All')
   return (
     <section className=''>
       <header className=''>
@@ -16,11 +17,13 @@ const Projects = () => {
       </header>
 
       {/* Filter Buttons */}
-      <ul className=''>
+      <ul className='filter-list'>
         {['All', 'Web Design', 'Applications', 'Web Development'].map(
           (category, index) => (
-            <li className='' key={index}>
-              <button className=''>{category}</button>
+            <li className='filter-item' key={index}>
+              <button className={category === activeCat ? 'active' : null}>
+                {category}
+              </button>
             </li>
           )
         )}
