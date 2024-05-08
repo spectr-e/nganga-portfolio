@@ -16,7 +16,15 @@ const Projects = () => {
       </header>
 
       {/* Filter Buttons */}
-      <ul className=''></ul>
+      <ul className=''>
+        {['All', 'Web Design', 'Applications', 'Web Development'].map(
+          (category, index) => (
+            <li className='' key={index}>
+              <button className=''>{category}</button>
+            </li>
+          )
+        )}
+      </ul>
     </section>
   )
 }
