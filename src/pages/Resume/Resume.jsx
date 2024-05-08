@@ -1,6 +1,7 @@
 import { FaBookReader } from 'react-icons/fa'
 import Timeline from './Timeline'
 import { BiSolidBookmark } from 'react-icons/bi'
+import Skill from './Skill'
 
 const Resume = () => {
   return (
@@ -80,7 +81,9 @@ const Resume = () => {
       {/* Skills Section */}
       <div className='skill'>
         <h3 className='skills-title h3'>My Skills</h3>
-        <ul className='skills-list content-card'></ul>
+        <ul className='skills-list content-card'>
+          <Skill title={'Web Design'} value={80} />
+        </ul>
       </div>
     </section>
   )
