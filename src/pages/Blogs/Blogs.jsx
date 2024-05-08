@@ -32,6 +32,21 @@ const Blogs = () => {
           ))}
         </ul>
       </div>
+
+      {/* pagination */}
+      <nav>
+        <ul className='pagination'>
+          {/* previous btn */}
+          <li className={`page-item ${currentPage === 1 ? 'disabled' : null}`}>
+            <button
+              className='page-link'
+              onClick={() => paginate(currentPage - 1)}
+            >
+              Previous
+            </button>
+          </li>
+        </ul>
+      </nav>
     </section>
   )
 }
