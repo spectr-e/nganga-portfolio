@@ -42,7 +42,7 @@ const Projects = () => {
             <li className='' key={project.id}>
               <a href='#' className=''>
                 <figure className=''>
-                  <img src={project.img} alt='project snapshot' width='80' />
+                  <img src={project.image} alt='project snapshot' width='80' />
                 </figure>
               </a>
             </li>
