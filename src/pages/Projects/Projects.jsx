@@ -3,13 +3,19 @@ import { useEffect, useState } from 'react'
 const Projects = () => {
   // import projects data
   const [projects, setProjects] = useState([])
+  const [filtered, setFiltered] = useState([])
+
   useEffect(() => {
     fetch('/projects.json')
       .then((response) => response.json())
-      .then((data) => setProjects(data))
+      .then((data) => {
+        setProjects(data)
+        setFiltered(data)
+      })
   }, [])
 
   const [activeCat, setActiveCat] = useState('All')
+
   return (
     <section className=''>
       <header className=''>
