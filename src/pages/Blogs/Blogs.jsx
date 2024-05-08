@@ -65,6 +65,22 @@ const Blogs = () => {
               </li>
             )
           )}
+
+          {/* next btn */}
+          <li
+            className={`page-item ${
+              currentPage === Math.ceil(blogs.length / postsPerPage)
+                ? 'disabled'
+                : null
+            }`}
+          >
+            <button
+              className='page-link'
+              onClick={() => paginate(currentPage + 1)}
+            >
+              Next
+            </button>
+          </li>
         </ul>
       </nav>
     </section>
