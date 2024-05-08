@@ -17,6 +17,8 @@ const Projects = () => {
 
   const [activeCat, setActiveCat] = useState('All')
 
+  const handleFilter = (category) => {}
+
   return (
     <section className=''>
       <header className=''>
@@ -28,7 +30,10 @@ const Projects = () => {
         {['All', 'Web Design', 'Applications', 'Web Development'].map(
           (category, index) => (
             <li className='filter-item' key={index}>
-              <button className={category === activeCat ? 'active' : null}>
+              <button
+                onClick={() => handleFilter(category)}
+                className={category === activeCat ? 'active' : null}
+              >
                 {category}
               </button>
             </li>
@@ -40,7 +45,12 @@ const Projects = () => {
       <section className='projects'>
         <ul className='project-list'>
           {filtered.map((project) => (
-            <li className='project-item active' key={project.id}>
+            <li
+              className='project-item active'
+              key={project.id}
+              data-category={project.category}
+              data-filter-item
+            >
               <a href='#'>
                 {/* project snapshots */}
                 <figure className='project-img'>
