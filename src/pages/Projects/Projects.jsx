@@ -42,6 +42,7 @@ const Projects = () => {
           {filtered.map((project) => (
             <li className='project-item active' key={project.id}>
               <a href='#'>
+                {/* project snapshots */}
                 <figure className='project-img'>
                   <div className='project-item-icon-box'>
                     <FaRegEye />
@@ -52,6 +53,10 @@ const Projects = () => {
                     loading='lazy'
                   />
                 </figure>
+
+                {/* project details */}
+                <h3 className='project-title'>{project.title}</h3>
+                <p className='project-category'>{project.category}</p>
               </a>
             </li>
           ))}
