@@ -13,6 +13,10 @@ const Blogs = () => {
   // pagination - create variables
   const [currentPage, setCurrentPage] = useState(1)
   const [postsPerPage, setPostsPerPage] = useState(4)
+  // pagination - create indexes
+  const indexOfLastPost = currentPage + postsPerPage
+  const indexOfFirstPost = indexOfLastPost - postsPerPage
+  const currentPosts = blogs.slice(indexOfFirstPost, indexOfLastPost)
 
   return (
     <section className='blog'>
@@ -21,7 +25,7 @@ const Blogs = () => {
       </header>
       <div className='blog-posts'>
         <ul className='blog-posts-list'>
-          {blogs.map((post, index) => (
+          {currentPosts.map((post, index) => (
             <Blog post={post} key={index} />
           ))}
         </ul>
